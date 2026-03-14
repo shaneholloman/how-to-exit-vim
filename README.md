@@ -857,3 +857,9 @@ Based on the C way of @dbalatero
 ```vim
 :let script = ['.intel_syntax noprefix', '.global _start', '_start:', 'mov rdi, ' . getpid()  . '', 'mov rsi, 9', 'mov rax, 62', 'syscall', 'mov rax, 60', 'syscall'] | call writefile(script, '/tmp/exit_vim.S', 'b') | execute "!gcc -nostdlib /tmp/exit_vim.S -o /tmp/exit_vim" | execute "! /tmp/exit_vim"
 ```
+
+## The infinite monkey way
+1. Get an infinite number of monkeys.
+2. Have an infinite number of monkeys type on a keyboard for an infinite amount of type.
+3. Make some tea and wait.
+4. According to [infinite monkey theorem](https://en.wikipedia.org/wiki/Infinite_monkey_theorem) they will exit vim eventually.
